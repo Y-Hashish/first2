@@ -9,8 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'test github actions '
-        run: pwd
-
-      - name: 'printing '
-        run: echo hashish
+      - uses: actions/checkout@v3
+      - name: "login to docker hub"
+        run: docker login --username hashish1934 --password dckr_pat_RY8_iwQZ5JgQoAO0KRXRSzJp07w
